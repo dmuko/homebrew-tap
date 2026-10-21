@@ -1,6 +1,6 @@
 cask "dmucode" do
-  version "0.2.0"
-  sha256 "acadb85f55a13eaa44cdb00dab8df6aa76ba7224f7a79017191d999c03b0eaf2"
+  version "0.3.0"
+  sha256 "a3bbb1517be99f10289108c0de963f3cca248f012c554f942ed7bb5f7f1bed46"
 
   url "https://github.com/dmuko/dmucode/releases/download/v#{version}/dmucode-#{version}.dmg"
   name "dmucode"
