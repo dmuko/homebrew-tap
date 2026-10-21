@@ -1,6 +1,6 @@
 cask "dmucode" do
-  version "0.5.0"
-  sha256 "972702d3fd70f643dedcbd7bd35da93828db545c452297199c0528d35e96f8ac"
+  version "0.6.0"
+  sha256 "7e7298e3d876742f4bb7841e0e342a949bf09324c6ba4a9b36267af29420502f"
 
   url "https://github.com/dmuko/dmucode/releases/download/v#{version}/dmucode-#{version}.dmg"
   name "dmucode"
@@ -17,6 +17,9 @@ cask "dmucode" do
   depends_on macos: :sonoma
 
   app "dmucode.app"
+  # The dmucode and notify commands, scripts in the app.
+  binary "#{appdir}/dmucode.app/Contents/Resources/bin/dmucode"
+  binary "#{appdir}/dmucode.app/Contents/Resources/bin/notify"
 
   zap trash: [
     "~/Library/Caches/com.dmuko.dmucode",
